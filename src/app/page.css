@@ -1,0 +1,92 @@
+.container {
+  width: 100vw;
+  padding: 50px;
+}
+
+.page_description {
+  width: 60%;
+  text-align: center;
+}
+
+.page_description_heading {
+  font-size: 50px;
+}
+
+.hide_filter_div_and_recommended_menu_div {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid gainsboro;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter_and_product_div {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 20px 0px;
+  border-top: 1px solid gainsboro;
+  flex-wrap: wrap;
+}
+
+.filter_div {
+  width: 18%;
+}
+
+.filter_div_hidden {
+  display: none;
+}
+
+.products_div {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 10px;
+}
+
+.products_div_full_width {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  gap: 10px;
+}
+
+/* Mobile view - 2 columns */
+@media (max-width: 768px) {
+  .filter_div {
+    width: 100%;
+  }
+
+  .products_div {
+    grid-template-columns: repeat(2, 48%);
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+
+  .products_div_full_width {
+    grid-template-columns: repeat(2, 48%);
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+
+  .product_count_desktop {
+    display: none;
+  }
+
+  .container {
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .page_description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page_description_heading {
+    font-size: 30px;
+  }
+}
